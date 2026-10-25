@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Undangan Pernikahan Jessica &amp; Yakup</title>
+  <meta name="description" content="Undangan pernikahan Jessica Mila Br. Sembiring &amp; Yakup Hasibuan — 05 Mei 2027.">
+  <meta name="theme-color" content="#7d0f1b">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Undangan Pernikahan Jessica &amp; Yakup">
+  <meta property="og:description" content="Dengan penuh sukacita, kami mengundang Anda untuk hadir dalam pernikahan kami.">
+  <meta property="og:image" content="assets/img/gallery-3.jpg">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Great+Vibes&family=Pinyon+Script&display=swap" rel="stylesheet">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="is-locked">
+
+  <audio id="bgm" loop preload="auto">
+    <source src="assets/audio/music.mp3" type="audio/mpeg">
+  </audio>
+
+  <!-- Panel samping (hanya tampil di laptop/desktop) -->
+  <aside class="side" aria-hidden="true">
+    <p class="side__label">The Wedding of</p>
+    <h2 class="side__names">Jessica &amp; Yakup</h2>
+    <p class="side__date">05 Mei 2027</p>
+  </aside>
+
+  <section class="cover bg-leather" id="cover" aria-label="Sampul undangan">
+    <h1 class="cover__title">You’re Invited!</h1>
+
+    <div class="envelope-wrap">
+      <button type="button" class="envelope" id="envelope" aria-label="Buka undangan" aria-expanded="false">
+        <span class="envelope__back"></span>
+        <span class="envelope__flap"></span>
+        <span class="envelope__letter" aria-hidden="true">Jessica &amp; Yakup</span>
+        <span class="envelope__front"></span>
+        <span class="envelope__seal" aria-hidden="true">J&amp;Y</span>
+      </button>
+      <span class="deco deco--lily deco--lily-tl" aria-hidden="true"></span>
+      <span class="deco deco--lily deco--lily-br" aria-hidden="true"></span>
+    </div>
+
+    <p class="cover__hint">Click the envelope to open</p>
+
+    <p class="cover__guest" id="guestBox" hidden>
+      Kepada Yth.<br><strong id="guestName"></strong>
+    </p>
+  </section>
+
+
+  <main class="app" id="app">
+
+    <section class="sec sec-ayat" id="ayat" aria-label="Ayat">
+      <div class="border-band border-band--top" aria-hidden="true"></div>
+
+      <div class="sec-ayat__body">
+        <div class="lace-frame reveal reveal--zoom">
+          <div class="lace-frame__plate">
+            <blockquote class="lace-frame__oval">
+              <p>TUHAN Allah berfirman: “Tidak baik, kalau manusia itu seorang diri saja. Aku akan menjadikan penolong baginya, yang sepadan dengan dia.”</p>
+              <footer>Kejadian 2:18</footer>
+            </blockquote>
+          </div>
+          <span class="deco deco--flower" aria-hidden="true"></span>
+        </div>
+      </div>
+
+      <div class="border-band border-band--bottom" aria-hidden="true"></div>
+    </section>
+
+    <section class="sec sec-couple" id="mempelai" aria-label="Mempelai">
+      <span class="deco deco--gold deco--gold-tr" aria-hidden="true"></span>
+      <span class="deco deco--gold deco--gold-bl" aria-hidden="true"></span>
+
+      <p class="couple__intro reveal">
+        Dengan penuh sukacita dan ucapan syukur kepada Tuhan, kami mengundang Bapak/Ibu/Saudara/i untuk hadir dalam pernikahan:
+      </p>
+
+      <article class="couple__row couple__row--bride reveal reveal--left">
+        <figure class="portrait">
+          <div class="portrait__photo">
+            <img class="js-photo" src="assets/img/bride.jpg" alt="Jessica Mila Br. Sembiring" loading="lazy">
+          </div>
+          <span class="portrait__frame" aria-hidden="true"></span>
+          <span class="portrait__bouquet" aria-hidden="true"></span>
+        </figure>
+        <div class="couple__info">
+          <h2 class="couple__name">Jessica Mila Br. Sembiring</h2>
+          <p class="couple__parents">Putri bungsu dari<br>Bapak Sutarjo dan Ibu Jane</p>
+        </div>
+      </article>
+
+      <div class="couple__amp reveal" aria-hidden="true">&amp;</div>
+
+      <article class="couple__row couple__row--groom reveal reveal--right">
+        <figure class="portrait">
+          <div class="portrait__photo">
+            <img class="js-photo" src="assets/img/groom.jpg" alt="Yakup Hasibuan" loading="lazy">
+          </div>
+          <span class="portrait__frame" aria-hidden="true"></span>
+          <span class="portrait__bouquet" aria-hidden="true"></span>
+        </figure>
+        <div class="couple__info">
+          <h2 class="couple__name">Yakup Hasibuan</h2>
+          <p class="couple__parents">Putra bungsu dari<br>Bapak Otto dan Ibu Norwati</p>
+        </div>
+      </article>
+    </section>
+
+    <section class="sec sec-date" id="acara" aria-label="Waktu dan tempat">
+      <span class="deco deco--swirl" aria-hidden="true"></span>
+      <h2 class="title-script reveal">Save The Date</h2>
+
+      <div class="events">
+        <article class="event event--right reveal reveal--right">
+          <div class="event__card">
+            <h3 class="event__name">Pemberkatan</h3>
+            <time class="event__day" datetime="2027-05-05">05</time>
+            <p class="event__month">MEI</p>
+            <p class="event__year">2027</p>
+            <p class="event__time">09.00 - 10.00</p>
+            <p class="event__venue">GKI JEMURSARI</p>
+          </div>
+
+          <a class="burst" target="_blank" rel="noopener"
+             href="https://www.google.com/maps/search/?api=1&query=GKI+Jemursari+Surabaya">Lihat<br>Lokasi</a>
+        </article>
+
+        <article class="event event--left reveal reveal--left">
+          <div class="event__card">
+            <h3 class="event__name">Resepsi</h3>
+            <time class="event__day" datetime="2027-05-05">05</time>
+            <p class="event__month">MEI</p>
+            <p class="event__year">2027</p>
+            <p class="event__time">10.30 - 21.00</p>
+            <p class="event__venue">GRAND LUXURY HOTEL</p>
+          </div>
+        
+          <a class="burst" target="_blank" rel="noopener"
+             href="https://www.google.com/maps/search/?api=1&query=Grand+Luxury+Hotel">Lihat<br>Lokasi</a>
+        </article>
+      </div>
+
+      <div class="countdown" id="countdown">
+        <h2 class="title-script reveal">Count The Day</h2>
+        <div class="countdown__row" role="timer" aria-live="off">
+          <div class="heart">
+            <svg class="heart__svg" viewBox="-3 -3 38 36" aria-hidden="true">
+              <path class="heart__outer" d="M23.6,0c-3.4,0-6.3,2.7-7.6,5.6C14.7,2.7,11.8,0,8.4,0C3.8,0,0,3.8,0,8.4c0,9.4,9.5,11.8,16,21.2c6.1-9.3,16-12.1,16-21.2C32,3.8,28.2,0,23.6,0z"/>
+              <path class="heart__inner" transform="translate(4.2 3.8) scale(.74)" d="M23.6,0c-3.4,0-6.3,2.7-7.6,5.6C14.7,2.7,11.8,0,8.4,0C3.8,0,0,3.8,0,8.4c0,9.4,9.5,11.8,16,21.2c6.1-9.3,16-12.1,16-21.2C32,3.8,28.2,0,23.6,0z"/>
+            </svg>
+            <div class="heart__text"><strong data-unit="days">0</strong><span>Hari</span></div>
+          </div>
+          <div class="heart">
+            <svg class="heart__svg" viewBox="-3 -3 38 36" aria-hidden="true">
+              <path class="heart__outer" d="M23.6,0c-3.4,0-6.3,2.7-7.6,5.6C14.7,2.7,11.8,0,8.4,0C3.8,0,0,3.8,0,8.4c0,9.4,9.5,11.8,16,21.2c6.1-9.3,16-12.1,16-21.2C32,3.8,28.2,0,23.6,0z"/>
+              <path class="heart__inner" transform="translate(4.2 3.8) scale(.74)" d="M23.6,0c-3.4,0-6.3,2.7-7.6,5.6C14.7,2.7,11.8,0,8.4,0C3.8,0,0,3.8,0,8.4c0,9.4,9.5,11.8,16,21.2c6.1-9.3,16-12.1,16-21.2C32,3.8,28.2,0,23.6,0z"/>
+            </svg>
+            <div class="heart__text"><strong data-unit="hours">0</strong><span>Jam</span></div>
+          </div>
+          <div class="heart">
+            <svg class="heart__svg" viewBox="-3 -3 38 36" aria-hidden="true">
+              <path class="heart__outer" d="M23.6,0c-3.4,0-6.3,2.7-7.6,5.6C14.7,2.7,11.8,0,8.4,0C3.8,0,0,3.8,0,8.4c0,9.4,9.5,11.8,16,21.2c6.1-9.3,16-12.1,16-21.2C32,3.8,28.2,0,23.6,0z"/>
+              <path class="heart__inner" transform="translate(4.2 3.8) scale(.74)" d="M23.6,0c-3.4,0-6.3,2.7-7.6,5.6C14.7,2.7,11.8,0,8.4,0C3.8,0,0,3.8,0,8.4c0,9.4,9.5,11.8,16,21.2c6.1-9.3,16-12.1,16-21.2C32,3.8,28.2,0,23.6,0z"/>
+            </svg>
+            <div class="heart__text"><strong data-unit="minutes">0</strong><span>Menit</span></div>
+          </div>
+          <div class="heart">
+            <svg class="heart__svg" viewBox="-3 -3 38 36" aria-hidden="true">
+              <path class="heart__outer" d="M23.6,0c-3.4,0-6.3,2.7-7.6,5.6C14.7,2.7,11.8,0,8.4,0C3.8,0,0,3.8,0,8.4c0,9.4,9.5,11.8,16,21.2c6.1-9.3,16-12.1,16-21.2C32,3.8,28.2,0,23.6,0z"/>
+              <path class="heart__inner" transform="translate(4.2 3.8) scale(.74)" d="M23.6,0c-3.4,0-6.3,2.7-7.6,5.6C14.7,2.7,11.8,0,8.4,0C3.8,0,0,3.8,0,8.4c0,9.4,9.5,11.8,16,21.2c6.1-9.3,16-12.1,16-21.2C32,3.8,28.2,0,23.6,0z"/>
+            </svg>
+            <div class="heart__text"><strong data-unit="seconds">0</strong><span>Detik</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <section class="sec sec-gallery" id="galeri" aria-label="Galeri foto">
+      <div class="dots dots--top">
+        <h2 class="title-script">Our Gallery</h2>
+        <span class="deco deco--butterfly" aria-hidden="true"></span>
+      </div>
+
+      <div class="gallery">
+        <div class="gallery__block">
+          <div class="gallery__col">
+            <button type="button" class="gallery__item reveal" data-bs-toggle="modal" data-bs-target="#lightbox" data-full="assets/img/gallery-1.jpg" aria-label="Perbesar foto 1">
+              <img class="js-photo" src="assets/img/gallery-1.jpg" alt="Foto prewedding di tepi danau saat senja" loading="lazy">
+            </button>
+            <button type="button" class="gallery__item reveal" data-bs-toggle="modal" data-bs-target="#lightbox" data-full="assets/img/gallery-2.jpg" aria-label="Perbesar foto 2">
+              <img class="js-photo" src="assets/img/gallery-2.jpg" alt="Foto prewedding berpelukan dengan latar danau" loading="lazy">
+            </button>
+          </div>
+          <button type="button" class="gallery__item gallery__item--big reveal" data-bs-toggle="modal" data-bs-target="#lightbox" data-full="assets/img/gallery-3.jpg" aria-label="Perbesar foto 3">
+            <img class="js-photo" src="assets/img/gallery-3.jpg" alt="Foto prewedding dengan pakaian adat" loading="lazy">
+          </button>
+        </div>
+
+        <div class="gallery__block gallery__block--reverse">
+          <button type="button" class="gallery__item gallery__item--big reveal" data-bs-toggle="modal" data-bs-target="#lightbox" data-full="assets/img/gallery-4.jpg" aria-label="Perbesar foto 4">
+            <img class="js-photo" src="assets/img/gallery-4.jpg" alt="Foto prewedding berjalan di padang rumput" loading="lazy">
+          </button>
+          <div class="gallery__col">
+            <button type="button" class="gallery__item reveal" data-bs-toggle="modal" data-bs-target="#lightbox" data-full="assets/img/gallery-5.jpg" aria-label="Perbesar foto 5">
+              <img class="js-photo" src="assets/img/gallery-5.jpg" alt="Foto prewedding bergandengan tangan menghadap danau" loading="lazy">
+            </button>
+            <button type="button" class="gallery__item reveal" data-bs-toggle="modal" data-bs-target="#lightbox" data-full="assets/img/gallery-6.jpg" aria-label="Perbesar foto 6">
+              <img class="js-photo" src="assets/img/gallery-6.jpg" alt="Foto prewedding berpelukan dengan latar pegunungan" loading="lazy">
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="dots dots--bottom" aria-hidden="true"></div>
+    </section>
+
+    <section class="sec sec-rsvp bg-leather" id="rsvp" aria-label="RSVP">
+      <h2 class="rsvp__title">RSVP</h2>
+
+      <div class="rsvp-card reveal reveal--zoom">
+        <form id="rsvpForm" class="rsvp-form" novalidate>
+          <div class="mb-3">
+            <label for="rsvpName" class="rsvp-label">Nama</label>
+            <input type="text" class="form-control field-gold" id="rsvpName" name="name"
+                   required maxlength="80" autocomplete="name">
+            <div class="invalid-feedback">Mohon isi nama Anda.</div>
+          </div>
+
+          <fieldset class="mb-3">
+            <legend class="rsvp-label">Apakah Berkenan Hadir?</legend>
+            <input type="radio" class="btn-check" name="attendance" id="attYes" value="Hadir" autocomplete="off">
+            <label class="choice" for="attYes">Ya, Hadir</label>
+            <input type="radio" class="btn-check" name="attendance" id="attNo" value="Tidak Hadir" autocomplete="off">
+            <label class="choice" for="attNo">Maaf, Tidak Dapat Hadir</label>
+            <p class="field-error" id="attError" hidden>Silakan pilih salah satu.</p>
+          </fieldset>
+
+          <div class="mb-3">
+            <label for="rsvpMessage" class="rsvp-label">Ucapan &amp; Doa</label>
+            <textarea class="form-control field-gold" id="rsvpMessage" name="message" rows="6" maxlength="500"></textarea>
+          </div>
+
+          <div class="text-center">
+            <button type="submit" class="btn btn-rsvp" id="rsvpSubmit">Konfirmasi</button>
+          </div>
+          <div id="rsvpFeedback" class="rsvp-feedback" role="status" aria-live="polite"></div>
+        </form>
+      </div>
+
+      <p class="rsvp__quote reveal">
+        “Merupakan suatu kehormatan dan kebanggaan bagi kami apabila Bapak/Ibu/Saudara/i berkenan hadir untuk memberkan Doa restu.”
+      </p>
+    </section>
+  </main>
+
+  
+  <button type="button" class="music-btn" id="musicBtn" aria-label="Putar atau jeda musik" aria-pressed="false" hidden>
+    <i class="bi bi-play-fill" aria-hidden="true"></i>
+  </button>
+
+  <div class="modal fade" id="lightbox" tabindex="-1" aria-label="Pratinjau foto" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content bg-transparent border-0">
+        <button type="button" class="btn-close btn-close-white ms-auto mb-2" data-bs-dismiss="modal" aria-label="Tutup"></button>
+        <img id="lightboxImg" class="img-fluid rounded" alt="">
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>
