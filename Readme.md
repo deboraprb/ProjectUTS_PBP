@@ -1,7 +1,7 @@
-#Undangan Pernikahan Digital
+# Undangan Pernikahan Digital
 Undangan pernikahan digital yang dibuat menggunakan HTML, CSS, Bootstrap, dan JavaScript. Website menampilkan informasi mempelai dan acara, galeri foto, hitung mundur, musik latar, serta formulir RSVP.
 
-#Fitur
+# Fitur
 - Sampul amplop interaktif untuk membuka undangan.
 - Nama tamu personal melalui parameter URL ?to=NamaTamu.
 - Musik latar yang dapat diputar atau dijeda setelah undangan dibuka.
@@ -13,7 +13,7 @@ Undangan pernikahan digital yang dibuat menggunakan HTML, CSS, Bootstrap, dan Ja
 - Animasi saat halaman digulir menggunakan IntersectionObserver.
 - Tampilan responsif untuk perangkat seluler dan desktop.
 
-#Teknologi
+# Teknologi
 - HTML5
 - CSS3
 - JavaScript
